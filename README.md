@@ -1,6 +1,6 @@
 # React-Calculator-App
 
-- Seeing the size of the elements adjust based on their device's screen size <br/>
+- Seeing the size of the elements adjust based on your device's screen size <br/>
 - Performing mathematical operations like addition, subtraction, multiplication, and division<br/>
 - Adjust the color theme based on your preference<br/>
 
