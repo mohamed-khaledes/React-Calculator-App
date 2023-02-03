@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+:root{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  --font-family:'League Spartan', sans-serif;;
+  /*theme one
+#### Backgrounds
+*/
+  --Very-dark-desaturated-blue: hsl(222, 26%, 31%);
+  --keypad-background:hsl(223, 31%, 20%);
+  --toggle-background:hsl(223, 31%, 20%);
+  --screen-background:hsl(224, 36%, 15%);
+  /*#### Keys*/
+  --Desaturated-dark-blue-1 : hsl(225, 21%, 49%); /*(key background)*/
+  --Desaturated-dark-blue: hsl(224, 28%, 35%);/* (key shadow)*/
+  --Red : hsl(6, 63%, 50%); /*(key background, toggle)*/
+  --Dark-red : hsl(6, 70%, 34%); /* (key shadow) */
+  --Light-grayish-orange: hsl(30, 25%, 89%);    /* (key background)*/
+  --Grayish-orange : hsl(28, 16%, 65%);     /*(key shadow)*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  /* #### Text */
+--Very-dark-grayish-blue: hsl(221, 14%, 31%);
+--White: hsl(0, 0%, 100%);
 
-.App-link {
-  color: #61dafb;
-}
+/*theme two
+#### Backgrounds
+*/
+--Light-gray : hsl(0, 0%, 90%); /*(main background)*/
+--Grayish-red : hsl(0, 5%, 81%);/*(toggle background, keypad background)*/
+--Very-light-gray : hsl(0, 0%, 93%); /*(screen background)*/
+/*keys*/
+--Dark-moderate-cyan: hsl(185, 42%, 37%); /*(key background)*/
+--Very-dark-cyan: hsl(185, 58%, 25%);
+--Orange : hsl(25, 98%, 40%);/*(key background)*/
+--Dark-orange : hsl(25, 99%, 27%);
+--Light-grayish-yellow:  hsl(45, 7%, 89%); /*(key background, toggle)*/
+--Dark-grayish-orange : hsl(35, 11%, 61%);
+/*text*/
+--Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+--White: hsl(0, 0%, 100%);
+--Black:black;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/*### Theme 3
+#### Backgrounds*/
+--Very-dark-violet: hsl(268, 75%, 9%); /*main background*/
+--Very-dark-violet-2 : hsl(268, 71%, 12%); /*(toggle background, keypad background, screen background)*/
+/*keys*/
+--Dark-violet : hsl(281, 89%, 26%); /*(key background)*/
+--Vivid-magenta : hsl(285, 91%, 52%);
+
+--Pure-cyan : hsl(176, 100%, 44%); /*(key background)*/
+--Soft-cyan : hsl(177, 92%, 70%);
+
+--Very-dark-violet-3 : hsl(268, 47%, 21%); /*(key background)*/
+--Dark-magenta : hsl(290, 70%, 36%);
+/*text*/
+--Light-yellow: hsl(52, 100%, 62%);
+--Very-dark-blue: hsl(198, 20%, 13%);
+--White: hsl(0, 0%, 100%);
 }

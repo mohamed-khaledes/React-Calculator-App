@@ -1,0 +1,262 @@
+/* start contianer */
+.container{
+    min-height: 100vh;
+    min-width: 100vw;
+    /* background-color: var(--Very-dark-desaturated-blue); */
+    display: flex;
+      justify-content: center;
+      overflow: hidden;
+  }
+  .container.first-color{
+    background-color: var(--Very-dark-desaturated-blue);
+  }
+  .container.second-color{
+    background-color: var(--Light-gray);
+  }
+  .container.third-color{
+    background-color: var(--Very-dark-violet);
+  }
+  /*end container*/
+.calculator{
+    width: 500px;
+    margin-top:70px;
+}
+@media (max-width:550px) {
+    .calculator{
+        width: 300px;
+        margin-top: 50px;
+    }
+}
+/*start calc head*/
+.calc-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-family);
+    color:var(--White);
+}
+.calc-head.first-color{
+    color: var(--White);
+}
+.calc-head.second-color{
+    color: var(--Very-dark-grayish-yellow);
+}
+.calc-head.third-color{
+    color: var(--Light-yellow);
+}
+.logo{
+    font-weight: 700;
+    font-size: 32px;
+}
+.theme{
+    display: flex;
+}
+.switch-theme{
+    width:75px;
+    margin-left: 20px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+.position{
+    background: var(--keypad-background);
+    width: 100%;
+    height: 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.position span{
+    width: 18px;
+    height: 18px;
+    background-color:transparent;
+    border-radius: 50%;
+    margin: 2px;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-size: 15px;
+}
+.position span.active{
+    background-color:var(--Red) ;
+}
+.position span:hover{
+    background-color:  var(--Red);
+}
+.position span.second-color.active{
+    background-color:var(--Orange) ;
+}
+.position span.second-color:hover{
+    background-color:  var(--Orange);
+}
+.position span.third-color.active{
+    background-color:var(--Pure-cyan) ;
+}
+.position span.third-color:hover{
+    background-color:  var(--Pure-cyan);
+}
+/*end calc head*/
+/*start calc output*/
+.calc-output{
+    margin-top:20px;
+    width: calc(100% - 20px);
+    height:120px;
+    background-color: var(--screen-background);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--White);
+    padding: 10px;
+    /* line-height: 2.5; */
+    text-align: right;
+}
+.calc-output.first-color{
+    background-color: var(--screen-background);
+    color: var(--White);
+}
+.calc-output.second-color{
+    background-color: var(--Very-light-gray);
+    color: var(--Very-dark-grayish-yellow);
+}
+.calc-output.third-color{
+    background-color: var(--Very-dark-violet-2);
+    color: var(--Light-yellow);
+}
+.calc-output .currentOperand{
+    margin:0;
+    padding: 0;
+    height: 50%;
+    
+}
+.calc-output .previosOperand{
+    margin: 0;
+    padding: 0;
+    color: var(--Desaturated-dark-blue-1);
+}
+/*end calc output*/
+/*start calc buttons*/
+.calc-buttons{
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,60px);
+    gap: 20px;
+    background-color: var(--toggle-background);
+    padding:20px;
+    border-radius: 10px;
+    width: calc(100% - 40px);
+}
+.calc-buttons.first-color{
+    background-color: var(--toggle-background);
+}
+.calc-buttons.second-color{
+    background-color: var(--Grayish-red);
+}
+.calc-buttons.third-color{
+    background-color: var(--Very-dark-violet-2);
+}
+@media (max-width:550px) {
+    .calc-buttons{
+        gap: 10px;
+    }
+}
+#del{
+    color: var(--White);
+    background-color: var(--Desaturated-dark-blue-1);
+    box-shadow: -2px 2px 0 0 var(--Desaturated-dark-blue);
+}
+.firs-color#del{
+    background-color: var(--Desaturated-dark-blue-1);
+    box-shadow: -2px 2px 0 0 var(--Desaturated-dark-blue);
+}
+.second-color#del{
+    background-color: var(--Dark-moderate-cyan);
+    box-shadow: -2px 2px 0 0 var(--Very-dark-cyan);
+}
+.third-color#del{
+    background-color: var(--Dark-violet);
+    box-shadow: -2px 2px 0 0 var(--Vivid-magenta);
+}
+#reset{
+    color: var(--White);
+    background-color: var(--Desaturated-dark-blue-1);
+    grid-column-start:1;
+    grid-column-end:3;
+    box-shadow: -2px 2px 0 0 var(--Desaturated-dark-blue);
+}
+.firs-color#reset{
+    background-color: var(--Desaturated-dark-blue-1);
+    box-shadow: -2px 2px 0 0 var(--Desaturated-dark-blue);
+}
+.second-color#reset{
+    background-color: var(--Dark-moderate-cyan);
+    box-shadow: -2px 2px 0 0 var(--Very-dark-cyan);
+}
+.third-color#reset{
+    background-color: var(--Dark-violet);
+    box-shadow: -2px 2px 0 0 var(--Vivid-magenta);
+}
+#equal{
+    color: var(--White);
+    background-color: var(--Red);
+    grid-column-start:3;
+    grid-column-end: 5;
+    box-shadow: -2px 2px 0 0 var(--Dark-red);
+}
+.firs-color#equal{
+    background-color: var(--Desaturated-dark-blue-1);
+    box-shadow: -2px 2px 0 0 var(--Desaturated-dark-blue);
+}
+.second-color#equal{
+    background-color: var(--Orange);
+    box-shadow: -2px 2px 0 0 var(--Dark-orange);
+}
+.third-color#equal{
+    background-color: var(--Pure-cyan);
+    box-shadow: -2px 2px 0 0 var(--Soft-cyan);
+}
+.calc-button{
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    color: var(--Very-dark-grayish-yellow);
+    font-size: 30px;
+    background-color: var(--Light-grayish-yellow);
+    transition: all 0.3s;
+    cursor: pointer;
+    box-shadow: -2px 2px 0 0 var(--Grayish-orange);
+    position: relative;
+}
+.calc-button.first-color{
+    background-color: var(--Light-grayish-orange);
+    box-shadow: -2px 2px 0 0 var(--Grayish-orange);
+}
+.calc-button.second-color{
+    background-color: var(--Light-grayish-yellow);
+    box-shadow: -2px 2px 0 0 var(--Dark-grayish-orange);
+}
+.calc-button.third-color{
+    background-color: var(--Very-dark-violet-3);
+    box-shadow: -2px 2px 0 0 var(--Dark-magenta);
+    color: var(--Light-yellow);
+}
+.calc-button.first-color:hover{
+    background-color: var(--White);
+}
+.calc-button.second-color:hover{
+    background-color: var(--White);
+}
+.calc-button.third-color:hover{
+    background-color: var(--Very-dark-violet-2);
+}
+.calc-button:active{
+    top: 3px;
+}
+/*end calc buttons*/
